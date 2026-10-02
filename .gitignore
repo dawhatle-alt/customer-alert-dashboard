@@ -1,0 +1,18 @@
+node_modules/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Salesforce case data and generated reports
+data/
+exports/
+*.log
+
+# Reference documents kept locally only
+*.pdf
+*.htm
+*.html
+!src/**/*.html
+*_files/

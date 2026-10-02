@@ -1,0 +1,25 @@
+{
+  "name": "controlm-sentiment-watch",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Flags open Control-M cases where the customer may be upset, using Salesforce case feeds and TypeSafe Jev.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "tsx src/sentiment-watch/server.ts",
+    "check": "tsx src/sentiment-watch/runOnce.ts",
+    "rc-check": "tsx src/sentiment-watch/rootcauseOnce.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.1",
+    "@typesafe-ai/sdk": "^0.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
